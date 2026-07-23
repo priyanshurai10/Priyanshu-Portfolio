@@ -1,3 +1,5 @@
+'use client';
+
 import ScrollProgress from '@/components/ScrollProgress';
 import CursorGlow from '@/components/CursorGlow';
 import Navbar from '@/components/Navbar';

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ExternalLink, Github, Layers, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
 import ProjectModal, { ProjectType } from './ProjectModal';
 
 const projectsList: ProjectType[] = [
@@ -110,17 +110,17 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        {/* Projects Cards Grid */}
+        {/* Projects Cards Grid with Motion Animations */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projectsList.map((project, index) => (
             <motion.div
               key={project.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.15 }}
-              whileHover={{ y: -8 }}
-              className="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-xl hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between group relative"
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
+              whileHover={{ y: -10, scale: 1.02 }}
+              className="glass-card rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800/80 shadow-xl hover:shadow-2xl hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between group relative"
             >
               {/* Card Top Accent Header */}
               <div className={`h-2.5 w-full bg-gradient-to-r ${project.gradient}`} />
@@ -134,7 +134,7 @@ export default function Projects() {
                     </span>
                     {project.liveUrl && (
                       <span className="flex items-center gap-1.5 text-xs text-emerald-600 dark:text-emerald-400 font-semibold bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">
-                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                        <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
                         Live Deployed
                       </span>
                     )}
@@ -164,12 +164,13 @@ export default function Projects() {
                   {/* Tech stack tags */}
                   <div className="flex flex-wrap gap-1.5">
                     {project.techStack.map((tech, tIdx) => (
-                      <span
+                      <motion.span
+                        whileHover={{ scale: 1.08 }}
                         key={tIdx}
                         className="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 text-[11px] font-semibold text-slate-700 dark:text-slate-300"
                       >
                         {tech}
-                      </span>
+                      </motion.span>
                     ))}
                   </div>
                 </div>
@@ -177,7 +178,9 @@ export default function Projects() {
                 {/* Card Action Buttons */}
                 <div className="pt-6 border-t border-slate-200 dark:border-slate-800/60 flex items-center gap-2">
                   {project.liveUrl && (
-                    <a
+                    <motion.a
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -185,10 +188,12 @@ export default function Projects() {
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo
-                    </a>
+                    </motion.a>
                   )}
 
-                  <a
+                  <motion.a
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -196,15 +201,17 @@ export default function Projects() {
                     title="GitHub Repository"
                   >
                     <Github className="w-4 h-4" />
-                  </a>
+                  </motion.a>
 
-                  <button
+                  <motion.button
+                    whileHover={{ scale: 1.03 }}
+                    whileTap={{ scale: 0.97 }}
                     onClick={() => setSelectedProject(project)}
                     className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl glass-card border border-indigo-500/30 text-indigo-600 dark:text-indigo-300 hover:text-indigo-700 dark:hover:text-white hover:bg-indigo-500/10 font-semibold text-xs sm:text-sm transition-all duration-200"
                   >
                     Case Study
                     <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
+                  </motion.button>
                 </div>
 
               </div>

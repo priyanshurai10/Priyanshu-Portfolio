@@ -40,7 +40,7 @@ export default function About() {
     <section id="about" className="py-24 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
+        {/* Section Header with Hi, I'm Priyanshu Rai */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,10 +53,10 @@ export default function About() {
             About Me
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            About <span className="gradient-text">Priyanshu Rai</span>
+            Hi, I&apos;m <span className="gradient-text">Priyanshu Rai</span>
           </h2>
           <h3 className="text-xl sm:text-2xl font-bold text-indigo-600 dark:text-indigo-400">
-            Software Engineer & AI Developer
+            Software Engineer
           </h3>
           <p className="text-slate-700 dark:text-slate-300 text-base sm:text-lg leading-relaxed">
             I build AI-powered applications, scalable backend systems, and modern web experiences that solve real-world problems.
