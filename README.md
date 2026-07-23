@@ -1,8 +1,10 @@
 # Priyanshu Rai — Personal Portfolio Website 🚀
 
-An award-winning, ultra-premium developer portfolio website built for **Priyanshu Rai** (Software Engineer & AI Developer). Inspired by Apple, Vercel, Linear, Stripe, and OpenAI design aesthetics.
+An award-winning, ultra-premium developer portfolio website built for **Priyanshu Rai** (Software Engineer & AI Developer).
 
-![Portfolio Preview Banner](https://img.shields.io/badge/Status-Live%20&%20Production%20Ready-emerald?style=for-the-badge&logo=vercel)
+🌐 **Live Website**: [https://priyanshurai-portfolio.vercel.app/](https://priyanshurai-portfolio.vercel.app/)
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-priyanshurai--portfolio.vercel.app-emerald?style=for-the-badge&logo=vercel)](https://priyanshurai-portfolio.vercel.app/)
 ![Next.js 14](https://img.shields.io/badge/Next.js-14.2%20(App%20Router)-black?style=for-the-badge&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=for-the-badge&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38bdf8?style=for-the-badge&logo=tailwindcss)
@@ -12,6 +14,7 @@ An award-winning, ultra-premium developer portfolio website built for **Priyansh
 
 ## ✨ Features & Highlights
 
+- **Live Deployed Link**: [https://priyanshurai-portfolio.vercel.app/](https://priyanshurai-portfolio.vercel.app/)
 - **Hero Showcase**:
   - Clean profile avatar with an animated multi-layered glowing aura.
   - Quick action buttons: **View Projects**, **Download Resume**, **Contact Me**, and **GitHub**.
@@ -108,7 +111,7 @@ An award-winning, ultra-premium developer portfolio website built for **Priyansh
    npm run dev
    ```
 
-4. Open `http://localhost:3000` (or `http://localhost:3001`) in your browser.
+4. Open `http://localhost:3000` in your browser.
 
 ---
 
@@ -125,17 +128,13 @@ npm run start
 
 ## ☁️ Deployment on Vercel
 
-This Next.js portfolio is optimized for 1-click deployment on **[Vercel](https://vercel.com/)**:
-
-1. Push this repository to your GitHub account (`priyanshurai10`).
-2. Log in to Vercel and click **Import Project**.
-3. Select `priyanshu-portfolio`.
-4. Click **Deploy**. Vercel will automatically build and deploy your site with a free SSL domain!
+This Next.js portfolio is live at **[https://priyanshurai-portfolio.vercel.app/](https://priyanshurai-portfolio.vercel.app/)** and is deployed automatically on every push to GitHub!
 
 ---
 
 ## 📬 Contact & Connect
 
+- **Portfolio**: [https://priyanshurai-portfolio.vercel.app/](https://priyanshurai-portfolio.vercel.app/)
 - **Email**: [priyanshurai121111@gmail.com](mailto:priyanshurai121111@gmail.com)
 - **Phone / WhatsApp**: [+91 7541881152](https://wa.me/917541881152)
 - **GitHub**: [github.com/priyanshurai10](https://github.com/priyanshurai10)

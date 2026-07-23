@@ -2,6 +2,7 @@
   "name": "priyanshu-rai-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://priyanshurai-portfolio.vercel.app/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

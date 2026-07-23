@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://priyanshurai.dev'),
-  title: 'Priyanshu Rai | Software Engineer & AI Systems Developer',
+  metadataBase: new URL('https://priyanshurai-portfolio.vercel.app'),
+  title: 'Priyanshu Rai | Software Engineer & AI Developer',
   description: 'Portfolio of Priyanshu Rai, Software Engineer specializing in AI-powered applications, scalable backend architecture, and modern full-stack web platforms.',
   keywords: [
     'Priyanshu Rai',
@@ -16,17 +16,17 @@ export const metadata: Metadata = {
     'Nyaya AI',
     'Krishi Dost AI',
     'Guru Nanak Institute of Technology',
-    'Bihar Developer'
+    'Bhabua Developer'
   ],
   authors: [{ name: 'Priyanshu Rai' }],
   openGraph: {
     title: 'Priyanshu Rai | Software Engineer Portfolio',
     description: 'I build AI-powered applications, scalable backend systems, and modern web experiences.',
-    url: 'https://priyanshurai.dev',
+    url: 'https://priyanshurai-portfolio.vercel.app',
     siteName: 'Priyanshu Rai Portfolio',
     images: [
       {
-        url: '/profile.png',
+        url: '/profile.jpg',
         width: 800,
         height: 800,
         alt: 'Priyanshu Rai Profile Photo',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   icons: {
-    icon: '/profile.png',
+    icon: '/profile.jpg',
   },
 };
 
